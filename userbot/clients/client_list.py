@@ -44,6 +44,13 @@ async def clients_list(SUDO_USERS, bot, MAN2, MAN3, MAN4, MAN5):
     except BaseException:
         pass
 
+    try:
+        if MAN6 is not None:
+            id5 = await MAN5.get_me()
+            user_ids.append(id5.id)
+    except BaseException:
+        pass
+
     return user_ids
 
 
