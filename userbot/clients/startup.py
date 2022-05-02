@@ -20,10 +20,20 @@ from userbot import (
     MAN3,
     MAN4,
     MAN5,
+    MAN6,
+    MAN7,
+    MAN8,
+    MAN9,
+    MAN10
     STRING_2,
     STRING_3,
     STRING_4,
     STRING_5,
+    STRING_6,
+    STRING_7,
+    STRING_8,
+    STRING_9,
+    STRING_10,
     STRING_SESSION,
     blacklistman,
     bot,
@@ -125,6 +135,77 @@ def multiman():
         except Exception as e:
             LOGS.info(str(e))
 
+
+    if STRING_6:
+        try:
+            MAN5.start()
+            LOOP.run_until_complete(man_client(MAN5))
+            user = MAN5.get_me()
+            name = user.first_name
+            uid = user.id
+            LOGS.info(f"STRING_5 detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——")
+            if user.id in blacklistman:
+                LOGS.warning(MSG_BLACKLIST.format(name, version))
+                sys.exit(1)
+        except Exception as e:
+            LOGS.info(str(e))
+
+    if STRING_7:
+        try:
+            MAN5.start()
+            LOOP.run_until_complete(man_client(MAN5))
+            user = MAN5.get_me()
+            name = user.first_name
+            uid = user.id
+            LOGS.info(f"STRING_5 detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——")
+            if user.id in blacklistman:
+                LOGS.warning(MSG_BLACKLIST.format(name, version))
+                sys.exit(1)
+        except Exception as e:
+            LOGS.info(str(e))
+
+    if STRING_8:
+        try:
+            MAN5.start()
+            LOOP.run_until_complete(man_client(MAN5))
+            user = MAN5.get_me()
+            name = user.first_name
+            uid = user.id
+            LOGS.info(f"STRING_5 detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——")
+            if user.id in blacklistman:
+                LOGS.warning(MSG_BLACKLIST.format(name, version))
+                sys.exit(1)
+        except Exception as e:
+            LOGS.info(str(e))
+
+    if STRING_9:
+        try:
+            MAN5.start()
+            LOOP.run_until_complete(man_client(MAN5))
+            user = MAN5.get_me()
+            name = user.first_name
+            uid = user.id
+            LOGS.info(f"STRING_5 detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——")
+            if user.id in blacklistman:
+                LOGS.warning(MSG_BLACKLIST.format(name, version))
+                sys.exit(1)
+        except Exception as e:
+            LOGS.info(str(e))
+
+    if STRING_10:
+        try:
+            MAN5.start()
+            LOOP.run_until_complete(man_client(MAN5))
+            user = MAN5.get_me()
+            name = user.first_name
+            uid = user.id
+            LOGS.info(f"STRING_5 detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——")
+            if user.id in blacklistman:
+                LOGS.warning(MSG_BLACKLIST.format(name, version))
+                sys.exit(1)
+        except Exception as e:
+            LOGS.info(str(e))
+
     if BOT_TOKEN:
         try:
             user = tgbot.get_me()
@@ -145,5 +226,15 @@ def multiman():
     if not STRING_4:
         failed += 1
     if not STRING_5:
+        failed += 1
+    if not STRING_6:
+        failed += 1
+    if not STRING_7:
+        failed += 1
+    if not STRING_8:
+        failed += 1
+    if not STRING_9:
+        failed += 1
+    if not STRING_10:
         failed += 1
     return failed
